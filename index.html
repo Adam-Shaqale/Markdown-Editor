@@ -26,6 +26,7 @@
         display: flex;
         width: 100%;
         min-height: 100vh;
+        flex-wrap: wrap;
       }
       /* Left Side */
       .left-side {
@@ -51,6 +52,11 @@
         line-height: 1.6;
         overflow-wrap: break-word;
         white-space: pre;
+      }
+      @media screen and (max-width: 660px) {
+        .container {
+            flex-direction: column;
+        }
       }
     </style>
   </head>
