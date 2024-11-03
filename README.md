@@ -1,5 +1,5 @@
 # Markdown-Editor
 Simple Markdown editor
 
-- Incompelete
+- Incomplete
 - May contain some errors
