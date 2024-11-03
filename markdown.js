@@ -92,7 +92,7 @@ function toHtml() {
                 list-style-type: circle;
                 margin-left: 3em;
             `;
-            li.textContent = line.slice(3);
+            li.textContent = line.slice(5);
             ul.append(li);
             output.append(ul);            
         }
