@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Editor</title>
+    <style>
+      /* Custom CSS Styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+      /* Header Styles */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: #212433;
+        color: white;
+        min-height: 50px;
+      }
+      /* Sides Container */
+      .container {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+      }
+      /* Left Side */
+      .left-side {
+        flex: 1;
+        background-color: #2c3044;
+        color: white;
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+        height: 100vh; /* Make it take full height */
+      }
+      /* Right Side */
+      .right-side {
+        flex: 1;
+        color: black;
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+        height: 100vh; /* Make it take full height */
+      }
+      /* Input and Output Styles */
+      [contenteditable="true"] {
+        outline: none;
+        height: 100%;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        white-space: pre;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Header -->
+      <div class="header">
+        <!-- File name -->
+        <span>MARK.md</span>
+        <!-- Word Counter -->
+        <span id="counter">0 words</span>
+      </div>
+      <!-- Sides Container -->
+      <div class="container">
+        <!-- Left Side -->
+        <div class="left-side">
+          <!-- Input -->
+          <div contenteditable="true" id="input" spellcheck="false"></div>
+        </div>
+        <!-- Right Side -->
+        <div class="right-side">
+          <!-- Output -->
+          <div id="output" spellcheck="false"></div>
+        </div>
+      </div>
+    </div>
+    <script src="markdown.js"></script>
+  </body>
+</html>
